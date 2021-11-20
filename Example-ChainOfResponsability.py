@@ -1,6 +1,8 @@
 """
 Para elaborar el ejemplo se parte del codigo encontrado en https://refactoring.guru/es/design-patterns/chain-of-responsibility
 El ejercicio permite alcanzar una mayor comprensión de este patrón.
+El equipo de trabajo analizo a profundidad el código y realizó los ajustes en función de la aplicación al caso de la Universidad.
+
 Reconocimiento de los derechos de autor para el Ingeniero Shvets autor del sitio y del código original. 
 """
 
@@ -74,6 +76,8 @@ def client_code(handler: Handler) -> None:
         else:
             print("---------------------------------------")
             print(f"  {etapa} No se encuentra este rol en el sistema.", end="\n")
+
+#En la implementación del patrón la verificación de homologación se realiza a través del formulario.
 
 
 if __name__ == "__main__":
